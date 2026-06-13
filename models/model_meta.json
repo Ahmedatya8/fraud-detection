@@ -1,0 +1,43 @@
+{
+  "model": "XGBoost",
+  "features": {
+    "numeric": [
+      "TransactionAmt",
+      "log_TransactionAmt",
+      "day",
+      "hour",
+      "card1",
+      "card2",
+      "card3",
+      "card5",
+      "addr1",
+      "addr2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5"
+    ],
+    "categorical": [
+      "ProductCD",
+      "card4",
+      "card6",
+      "P_emaildomain"
+    ]
+  },
+  "target": "isFraud",
+  "imbalance_strategy": "class_weight=balanced / scale_pos_weight",
+  "cv_auc_mean": 0.9065,
+  "cv_auc_std": 0.0012,
+  "test_AUC": 0.914,
+  "test_F1": 0.3006,
+  "test_Precision": 0.186,
+  "test_Recall": 0.7832,
+  "test_AP": 0.5347
+}
