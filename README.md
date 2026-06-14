@@ -4,7 +4,7 @@
 > transaction data from the IEEE-CIS Fraud Detection Kaggle competition.
 > Served via REST API, containerized with Docker, deployed on Render.
 
-🔗 **Live API:** https://fraud-detection.onrender.com/docs
+🔗 **Live API:** https://fraud-detection-muto.onrender.com/docs
 
 ---
 
@@ -67,16 +67,16 @@ but catches zero fraud cases. This is why accuracy is useless here.
 
 ## API Usage
 
-**Base URL:** `https://fraud-detection.onrender.com`
+**Base URL:** `https://fraud-detection-muto.onrender.com`
 
 ### Health check
 ```bash
-curl https://fraud-detection.onrender.com/health
+curl https://fraud-detection-muto.onrender.com/health
 ```
 
 ### Predict fraud
 ```bash
-curl -X POST https://fraud-detection.onrender.com/predict \
+curl -X POST https://fraud-detection-muto.onrender.com/predict \
   -H "Content-Type: application/json" \
   -d '{
     "TransactionAmt": 150.0,
@@ -107,7 +107,7 @@ curl -X POST https://fraud-detection.onrender.com/predict \
 
 ```bash
 # Clone
-git clone https://github.com/YOUR_USERNAME/fraud-detection
+git clone https://github.com/Ahmedatya8/fraud-detection
 cd fraud-detection
 
 # Install
