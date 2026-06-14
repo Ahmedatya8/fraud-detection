@@ -51,14 +51,14 @@ but catches zero fraud cases. This is why accuracy is useless here.
 | Random Forest | ~0.91 | ~0.71 |
 | **XGBoost** | **~0.95** | **~0.78** |
 
-**Final model: [YOUR BEST MODEL]**
+**Final model: XGBoost**
 
 | Metric | Value |
 |---|---|
-| AUC-ROC | [YOUR VALUE] |
-| F1 Score | [YOUR VALUE] |
-| Precision | [YOUR VALUE] |
-| Recall | [YOUR VALUE] |
+| AUC-ROC | 0.9140
+| F1 Score | 0.3006
+| Precision | 0.1860
+| Recall | 0.7832 |
 
 **Imbalance strategy:** `scale_pos_weight` for XGBoost /
 `class_weight='balanced'` for other models — no oversampling needed.
